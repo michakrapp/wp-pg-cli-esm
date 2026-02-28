@@ -1,0 +1,10 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "test-esm/hello",
+	"version": "0.1.0",
+	"title": "Test ESM Block",
+	"category": "widgets",
+	"editorScript": "file:./index.js",
+	"viewScriptModule": "file:./view.js"
+}

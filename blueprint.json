@@ -1,0 +1,14 @@
+{
+	"$schema": "https://playground.wordpress.net/blueprint-schema.json",
+	"landingPage": "/test-esm/",
+	"preferredVersions": {
+		"wp": "latest",
+		"php": "8.3"
+	},
+	"steps": [
+		{
+			"step": "wp-cli",
+			"command": "wp post create --post_type=page --post_title=TestESM --post_name=test-esm --post_content='<!-- wp:test-esm/hello /-->' --post_status=publish"
+		}
+	]
+}
