@@ -35,11 +35,17 @@ Keep-Alive: timeout=5
    ```
 
 2. Test the MIME type:
+
+   a. Manually
+   - Go to the newly create page at: http://127.0.0.1:9400/test-esm/
+   - Open the browser console and see the error: "TypeError: 'text/plain' is not a valid JavaScript MIME type."
+
+   b. Programmatically
    ```bash
    curl -I http://127.0.0.1:9400/wp-content/plugins/wp-pg-cli-esm/view.js
    ```
 
-3. Observe: No Content-Type header in response
+3. Observe: No Content-Type header in response or Browser error
 
 ## Files
 
